@@ -1,0 +1,398 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap");
+body {
+  font-family: "Montserrat";
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  width: 100%;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+section {
+  padding: 3rem 4rem;
+}
+
+h1 {
+  font-size: 59px;
+  margin: 0;
+  font-weight: 400;
+  color: #ecf0f1;
+}
+
+h2 {
+  font-size: 36px;
+  color: #2b2f3b;
+  margin-bottom: 2rem;
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: 500;
+  color: #2b2f3b;
+}
+
+h4 {
+  font-size: 19px;
+  font-weight: 600;
+}
+
+p {
+  font-size: 18px;
+  margin: 0.7rem 0 2rem 0;
+  color: #2b2f3b;
+}
+
+button {
+  border: 0;
+  border-radius: 5px;
+  padding: 16px 20px;
+  font-size: 18px;
+  font-family: Montserrat;
+  cursor: pointer;
+  -webkit-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+  outline: none;
+}
+
+.header {
+  height: 70px;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(rgba(255, 255, 255, 0.19))
+  );
+  background: linear-gradient(rgba(255, 255, 255, 0.19));
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0 2rem;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.header #logo h2 {
+  font-weight: 600;
+  font-size: 30px;
+  color: white;
+}
+
+.header aside {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.header aside ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header aside ul li {
+  margin: 0 0.8rem;
+}
+
+.header aside ul li:hover a {
+  color: #d8dde0;
+}
+
+.header aside ul li a {
+  font-size: 20px;
+  color: #ecf0f1;
+}
+
+.header aside .phone-number {
+  color: #ffd943;
+  font-size: 24px;
+  font-weight: 500;
+  margin-left: 1rem;
+}
+
+.hero p {
+  width: 800px;
+  color: white;
+  line-height: 1.7rem;
+  margin: 0.6rem 0;
+  max-width: 100%;
+}
+
+.hero p,
+.hero h1 {
+  -webkit-animation: alternate;
+  -webkit-animation-name: run;
+  -webkit-animation-duration: 1s;
+}
+
+.hero-wrapper {
+  background: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(0, 0, 0, 0.5))
+    ),
+    url(/image/hero.jpg);
+  background-position: bottom;
+  background-size: cover;
+  height: 100vh;
+}
+
+#about-link {
+  color: #ffd943;
+  font-size: 18px;
+}
+
+@-webkit-keyframes run {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-100px);
+    transform: translateY(-100px);
+  }
+  50% {
+    -webkit-transform: translateX(-20px);
+    transform: translateX(-20px);
+  }
+}
+
+@keyframes run {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-100px);
+    transform: translateY(-100px);
+  }
+  50% {
+    -webkit-transform: translateX(-20px);
+    transform: translateX(-20px);
+  }
+}
+
+.services {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+}
+
+.services .item {
+  background-color: #ecf0f1;
+  margin: 1rem;
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+}
+
+.services .item:hover {
+  background-color: #e4e8e9;
+}
+
+.services .item > *:not(:first-child) {
+  padding: 0 2rem;
+}
+
+.services img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 250px;
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.services a {
+  color: #e74c3c;
+  margin-bottom: 1.6rem;
+  font-size: 18px;
+  display: block;
+}
+
+.services a:hover {
+  text-decoration: underline;
+}
+
+.benefits-grid {
+  justify-items: center;
+  gap: 1rem;
+  display: -ms-grid;
+  display: grid;
+  text-align: center;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+}
+
+.benefits-grid .benefit {
+  padding: 1rem 0.5rem;
+}
+
+.benefits-grid .benefit:hover {
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#eaeaea),
+    to(white)
+  );
+  background: linear-gradient(#eaeaea, white);
+}
+
+.benefits-grid .benefit img {
+  width: 70px;
+}
+
+.benefits {
+  text-align: center;
+}
+
+.steps {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.steps .acc-heading {
+  width: 800px;
+  max-width: 100%;
+  text-align: left;
+  background-color: #ffd943;
+  border-radius: 5px;
+  color: #2b2f3b;
+  margin: 0.5rem 0;
+}
+
+.steps .acc-heading:hover {
+  opacity: 85%;
+}
+
+.steps .acc-content {
+  -webkit-transition: max-height 0.3s ease;
+  transition: max-height 0.3s ease;
+  text-align: left;
+  max-height: 0;
+  overflow: hidden;
+  padding: 0 1rem;
+  width: 800px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.steps .acc-content p {
+  font-weight: 400;
+}
+
+.parts {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -ms-grid;
+  display: grid;
+  gap: 5rem;
+  grid-template-columns: repeat(2, 1fr);
+  text-align: center;
+}
+
+.parts main {
+  text-align: left;
+}
+
+.parts aside > * {
+  display: block;
+  text-align: left;
+  font-size: 23px;
+  text-decoration: underline;
+  margin: 0.5rem 0;
+  color: #2b2f3b;
+}
+
+.parts aside > *:hover {
+  opacity: 80%;
+}
+
+.about {
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.about .img-showcase {
+  position: relative;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.about .img-showcase img {
+  width: 500px;
+  display: block;
+  opacity: 80%;
+  max-width: 100%;
+}
+
+.about .img-showcase .showcase-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  font-size: 40px;
+  cursor: pointer;
+}
+
+.contact {
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.footer {
+  background-color: #2b2f3b;
+  padding: 1rem;
+  text-align: center;
+  color: #ecf0f1;
+}
+
+@media (max-width: 965px) {
+  section {
+    padding: 3rem 2rem;
+  }
+  .hero-wrapper {
+    text-align: center;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .hero-wrapper h1 {
+    font-size: 45px;
+  }
+
+  .about {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .contact {
+    grid-template-columns: repeat(1, 1fr);
+    text-align: center;
+  }
+
+  .mapouter {
+    display: none;
+  }
+}
